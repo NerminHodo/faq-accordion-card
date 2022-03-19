@@ -1,0 +1,160 @@
+body {
+    align-items: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    color: hsl(237, 12%, 33%);
+    display: flex;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 0.75rem;
+    height: 100vh;
+    justify-content: center;
+}
+
+p {
+    color: hsl(240, 6%, 50%);
+    display: none;
+}
+
+h1 {
+    font-weight: 700;
+    padding-bottom: 10%;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+hr {
+    color: hsl(240, 5%, 91%);
+}
+
+.col-md-5 {
+    background-color: white;
+    padding: 5%;
+}
+
+/* Left Col */
+.left {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position-y: bottom;
+    background-position: 120% 60%;
+    background-repeat: no-repeat;
+    background-size: 170%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+
+.woman-img-div {
+    overflow: hidden;
+}
+
+.woman {
+    margin-left: -20%;
+    position: relative;
+    width: 110%;
+}
+
+.woman-mobile-div {
+    display: none;
+}
+
+.box {
+    left: -16%;
+    position: absolute;
+    top: 45%;
+    z-index: 10;
+}
+
+/* Right Col */
+.right {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.all-q-and-a {
+    padding-right: 15%;
+}
+
+.q-and-a {
+    align-items: flex-start;
+    display: flex;
+    justify-content: left;
+}
+
+.qm {
+    margin-bottom: 2%;
+    margin: auto;
+}
+
+.qm:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.arrow {
+    margin-left: auto;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.active {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.attribution {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: block;
+        margin: 5%;
+        padding-top: 40%;
+    }
+
+    .right {
+        border-radius: 15px;
+        /* margin-bottom: 10%; */
+        padding-top: 50%;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .woman-mobile-div {
+        background-image: url(../images/bg-pattern-mobile.svg);
+        background-position: 35% 100%;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        display: block;
+        left: 5%;
+        padding: 10%;
+        position: absolute;
+        top: 3%;
+    }
+
+    .woman-mobile {
+        width: 90%;
+    }
+
+    .q-and-a {
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
